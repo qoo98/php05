@@ -30,7 +30,7 @@ class UpdateController extends Controller
     {
     $user = \Auth::user();
     $avatar=request()->file('avatar')->getClientOriginalName();
-    request()->file('avatar')->storeAs('public/profiles', $avatar);
+    request()->file('avatar')->storeAs('public/images', $avatar);
 
 
     $this->validator($request->all())->validate();

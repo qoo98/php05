@@ -11,7 +11,7 @@
         @if ($list->lists_id == $shop->lists_id)
         <div class="userlist">
             @if (isset($list->user->avatar))
-                <img src="{{ asset('storage/profiles/'.$list->user->avatar) }}" alt="profile_image" class="d-block rounded-circle mb-3">
+                <img src="{{ asset('storage/images/'.$list->user->avatar) }}" alt="profile_image" class="d-block rounded-circle mb-3">
             @else
                 <div class="space"></div>
             @endif
